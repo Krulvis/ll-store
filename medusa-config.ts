@@ -17,4 +17,10 @@ module.exports = defineConfig({
             sslmode: "disable",
         },
     },
+    plugins: [
+        {
+            resolve: "@ll/measurements",
+            options: {}
+        }
+    ]
 })
