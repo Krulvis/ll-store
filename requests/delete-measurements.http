@@ -1,5 +1,5 @@
-### GET Measurements
-GET {{host}}/store/customers/me?fields=*measurements
+### DELETE Measurements
+DELETE {{host}}/store/measurement/01KEMT8NAP5EG9YX5T8YJD1NMB
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3Rvcl9pZCI6ImN1c18wMUtFRk1HMEVKRFNGWEZXWEdEVEhQUEdLRSIsImFjdG9yX3R5cGUiOiJjdXN0b21lciIsImF1dGhfaWRlbnRpdHlfaWQiOiJhdXRoaWRfMDFLRUZNRzBDWFlNMFQ0UjZTNU4xVzhZVFYiLCJhcHBfbWV0YWRhdGEiOnsiY3VzdG9tZXJfaWQiOiJjdXNfMDFLRUZNRzBFSkRTRlhGV1hHRFRIUFBHS0UifSwidXNlcl9tZXRhZGF0YSI6e30sImlhdCI6MTc2ODA3MzE5NiwiZXhwIjoxNzY4MTU5NTk2fQ.9LLjmR1mNVWMHkKHUGMEELUNv6mIskRB7I6vputMItw
 x-publishable-api-key: {{publishable-api-key}}
