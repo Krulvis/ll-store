@@ -8,14 +8,3 @@ Content-Type: application/json
 }
 
 ###
-
-### GET Measurements
-GET {{host}}/measurement/
-Content-Type: application/json
-
-{
-    "email": "{{customer.email}}",
-    "password": "{{customer.password}}"
-}
-
-###

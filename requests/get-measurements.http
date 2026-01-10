@@ -1,0 +1,12 @@
+### GET Measurements
+GET {{host}}/store/customers/me?fields=*measurements
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhY3Rvcl9pZCI6ImN1c18wMUtFSjMzRTFUQzEwTlcyWTZONFFQM05OMSIsImFjdG9yX3R5cGUiOiJjdXN0b21lciIsImF1dGhfaWRlbnRpdHlfaWQiOiJhdXRoaWRfMDFLRUozM0UxOEZCOEMyRFBTVEdWQ1ZYQVgiLCJhcHBfbWV0YWRhdGEiOnsiY3VzdG9tZXJfaWQiOiJjdXNfMDFLRUozM0UxVEMxME5XMlk2TjRRUDNOTjEifSwidXNlcl9tZXRhZGF0YSI6e30sImlhdCI6MTc2ODA0ODA1MCwiZXhwIjoxNzY4MTM0NDUwfQ.JJFA988LCadMV6pugAymBY59KYnkBKtMdauhkyeZIvQ
+x-publishable-api-key: {{publishable-api-key}}
+
+{
+    "email": "{{customer.email}}",
+    "password": "{{customer.password}}"
+}
+
+###
