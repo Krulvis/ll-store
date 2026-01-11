@@ -5,7 +5,7 @@ export default defineMiddlewares({
     routes: [
         {
             // Add POST validation middleware for the measurement endpoint
-            matcher: "/store/measurement",
+            matcher: "/store/measurements",
             method: "POST",
             middlewares: [validateAndTransformBody(PostStoreMeasurementSchema)],
         }
