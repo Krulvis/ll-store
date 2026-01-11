@@ -7,4 +7,9 @@ Content-Type: application/json
     "password": "{{customer.password}}"
 }
 
+> {%
+    client.global.set("auth_token", response.body.token);
+    client.log("Token stored: " + response.body.token);
+%}
+
 ###
