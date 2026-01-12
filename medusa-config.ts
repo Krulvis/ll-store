@@ -20,6 +20,9 @@ module.exports = defineConfig({
     modules: [
         {
             resolve: "./src/modules/measurement",
+        },
+        {
+            resolve: "./src/modules/latexproduct",
         }
     ]
 })

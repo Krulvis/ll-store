@@ -1,5 +1,6 @@
 import {defineMiddlewares, validateAndTransformBody} from "@medusajs/framework/http"
 import {PostStoreMeasurementSchema} from "./store/measurements/validators";
+import { z } from "zod"
 
 export default defineMiddlewares({
     routes: [
@@ -8,6 +9,13 @@ export default defineMiddlewares({
             matcher: "/store/measurements",
             method: "POST",
             middlewares: [validateAndTransformBody(PostStoreMeasurementSchema)],
-        }
+        },
+        {
+            method: "POST",
+            matcher: "/admin/products",
+            additionalDataValidator: {
+                custom_name: z.string().optional(),
+            },
+        },
     ],
 })
